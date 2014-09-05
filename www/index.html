@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acceleration Example</title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.camera.getPicture(function(){},False);
+    }
+
+
+    </script>
+  </head>
+  <body>
+    <h1>Acelerômetro</h1>
+    <p id="acceleration">Acelerômetro</p>
+  </body>
+</html>
