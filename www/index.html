@@ -16,14 +16,13 @@
     // device APIs are available
     //
     function onDeviceReady() {
-        navigator.camera.getPicture(function(){},False);
+        navigator.camera.getPicture(function(){}, function(){});
     }
 
 
     </script>
   </head>
   <body>
-    <h1>Acelerômetro</h1>
-    <p id="acceleration">Acelerômetro</p>
+    <h1>Camera</h1>
   </body>
 </html>
