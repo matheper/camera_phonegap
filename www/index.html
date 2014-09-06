@@ -16,7 +16,12 @@
     // device APIs are available
     //
     function onDeviceReady() {
-        navigator.camera.getPicture(function(){}, function(){});
+        navigator.camera.getPicture(onSuccess, function(){});
+    }
+
+    function onSuccess(imageData) {
+        var image = document.getElementById('myImage');
+        image.src = "data:image/jpeg;base64," + imageData;
     }
 
 
