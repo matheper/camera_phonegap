@@ -7,17 +7,7 @@
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
     <script type="text/javascript" charset="utf-8">
-/*
-    document.addEventListener("deviceready", onDeviceReady, false);
-    
-    function onDeviceReady() {
-    }
 
-    function getPicture(){
-        navigator.camera.getPicture( function(){}, function(){});
-    }
-*/
-    
     function getPicture(){
         navigator.camera.getPicture(function(){}, function(){});
     }
@@ -28,12 +18,13 @@
 
     function alertar(){
         navigator.notification.alert(
-          'Seu celular será desligado agora!',
+          'Alerta',
           function(){},
-          'Desligar',
-          'Ok',
+          'Titulo',
+          'Botão'
         );
     }
+    
 /*  
     function confirmar(){
         navigator.notification.confirm(
