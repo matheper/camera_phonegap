@@ -22,7 +22,11 @@
         navigator.camera.getPicture(
           function(){},
           function(){},
-          {sourceType: Camera.PictureSourceType.PHOTOLIBRARY}
+          {
+            Camera.DestinationType: Camera.DestinationType.NATIVE_URI,
+            allowEdit: false,
+            saveToPhotoAlbum: true,
+          }
         );
     }
 
