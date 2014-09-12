@@ -16,18 +16,16 @@
     // device APIs are available
     //
     function onDeviceReady() {
-        navigator.camera.getPicture(onSuccess, function(){});
     }
-
-    function onSuccess(imageData) {
-        var image = document.getElementById('myImage');
-        image.src = "data:image/jpeg;base64," + imageData;
+    
+    function getPicture(){
+        navigator.camera.getPicture(function(){}, function(){});
     }
-
 
     </script>
   </head>
   <body>
     <h1>Camera</h1>
+    <button onclick="getPicture();">Foto</button>
   </body>
 </html>
