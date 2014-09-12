@@ -19,7 +19,11 @@
     }
     
     function getPicture(){
-        navigator.camera.getPicture(function(){}, function(){});
+        navigator.camera.getPicture(
+          function(){},
+          function(){},
+          {sourceType: Camera.PictureSourceType.PHOTOLIBRARY}
+        );
     }
 
     </script>
